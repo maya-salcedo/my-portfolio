@@ -3,17 +3,15 @@ import styled from 'styled-components';
 import myPicture from '../image/profile-img.jpg';
 
 const ContainerWrapper = styled.div`
-  background-color: #ffecda;
   margin: 0;
   padding: 5% 5%
   
 `;
 
 const Header = styled.h1`
-  color: #222831;
   font-weight: 400;
   font-size: 3rem;
-  text-align: left;
+  text-align: center;
   padding: 5% 10% 0 5%;
   margin: 0;
 

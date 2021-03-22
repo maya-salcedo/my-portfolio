@@ -1,32 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
+import SkillChart from './SkillChart';
+
+const ContainerWrapper = styled.div`
+  margin: 0;
+  padding: 5% 5%;
+`;
 
 const Header = styled.h1`
-  color: #222831;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 3rem;
-  text-align: left;
-  padding-top: 5rem;
+  text-align: center;
+  padding: 5% 10% 0 5%;
+  margin: 0;
+
 `;
 
-const Content = styled.p`
-  text-align: left;
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  item-align: center;
+  justify-content: center;
 `;
+
+
 
 const Skills = () => {
     return(
-        <div>
+        <ContainerWrapper>
             <Header>My Skills</Header>
-            <Content>
-                React
-                Node
-                Express
-                Javascript
-                CSS
-                HTML
-                PostgreSQL
-            </Content>
-        </div>
+            <ContentWrapper>
+            <SkillChart />
+            </ContentWrapper>
+        </ContainerWrapper>
     )
 }
 

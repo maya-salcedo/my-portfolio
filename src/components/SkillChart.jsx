@@ -4,13 +4,14 @@ import styled from 'styled-components';
 // eslint-disable-next-line
 import * as plugins from 'chartjs-plugin-deferred';
 
+
 const data = {
-  labels: ['React', 'Node', 'Express', 'Javascript', 'CSS', 'HTML', 'PostgreSQL'],
+  labels: ['React', 'Node', 'Express', 'Javascript', 'CSS', 'HTML', 'PostgreSQL', 'Python'],
   datasets: [
     {
       backgroundColor: '#d3e0ea',
       hoverBackgroundColor: '#1687a7',
-      data: [65, 59, 80, 80, 56, 55, 40]
+      data: [80, 60, 60, 75, 85, 85, 65, 50]
     }
   ]
 };
@@ -40,6 +41,7 @@ const  options = {
       }
     ]
   },
+
   legend: {
     display:false
   },

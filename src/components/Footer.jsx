@@ -4,14 +4,15 @@ import styled from 'styled-components';
 
 
 const FooterWrapper = styled.footer`
-  text-align: left;
+  text-align: center;
+  color: #9e9d89;
 `;
 
 const Footer = () => {
   return(
     <div>
       <FooterWrapper>
-        <p>Copyright © Maya Salcedo 2021</p>
+        <p>Copyright © Maya Salcedo {new Date().getFullYear()}</p>
       </FooterWrapper>
     </div>
   )

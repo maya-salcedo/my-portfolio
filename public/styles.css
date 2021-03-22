@@ -6,11 +6,15 @@ body {
   padding: 0px;
 }
 
-h2 {
+h2, li {
   font-family: 'Source Sans Pro', sans-serif;
     
 }
 
 p, a {
   font-family: 'Merriweather', serif;
+}
+
+.nav-link {
+  text-decoration: none;
 }

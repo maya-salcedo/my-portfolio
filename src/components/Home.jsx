@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CarouselWrapper from './Carousel';
 
 
 
@@ -9,7 +10,7 @@ const HomeWrapper = styled.div`
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  height: 45rem;
+  height: 20rem;
   margin: 0;
 `;
 
@@ -23,14 +24,7 @@ const Header = styled.h1`
   text-shadow: 0 0 10px #865858, 2px 2px 3px rgba(236,223,200,0.05);
 `;
 
-const Description = styled.h2`
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 2rem;
-  text-align: center;
-  margin: 0;
-  text-shadow: 0 0 10px #865858, 2px 2px 3px rgba(236,223,200,0.05);
-`;
+
 
 const Ruler = styled.hr`
   width: 30%;
@@ -39,14 +33,14 @@ const Ruler = styled.hr`
 `;
 
 const Home = () => {
+  console.log("what is wrong");
   return(
     <HomeWrapper>
       <Header>I'm Maya Salcedo</Header>
       <Ruler />
-      <Description>a web developer</Description>
+      <CarouselWrapper />
     </HomeWrapper>
-    
-  )
+  );
 }
 
 export default Home;

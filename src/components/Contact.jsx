@@ -36,7 +36,7 @@ const Content = styled.div`
   width: 12rem;
   height: auto;
   margin: auto;
-  > li {
+  > a {
     list-style: none;
     text-align: center;
     padding: 2%;
@@ -56,8 +56,8 @@ const Contact = () => {
             <ContentWrapper>
                 <li>maya.salcedo07@gmail.com</li>
                 <Content>
-                <li> <FontAwesomeIcon icon={faLinkedin} className="icon" /> </li>
-                <li> <FontAwesomeIcon icon={faGithub} className="icon" /></li>
+                <a href="https://www.linkedin.com/in/mayasalcedo/" target="_blank" style={{color:'#046582'}}><FontAwesomeIcon icon={faLinkedin} className="icon" /> </a>
+                <a href="https://github.com/maya-salcedo" target="_blank" style={{color:'#393232'}}> <FontAwesomeIcon icon={faGithub} className="icon" /> </a>
                 </Content>         
             </ContentWrapper>
         </ContainerWrapper>

@@ -10,17 +10,17 @@ import Contact from "./Contact";
 
 const NavigationWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding: 2%;
+  text-align: center;
+  flex-wrap: no-wrap;
+  justify-content: center;
   width: 100%;
-  height: 1.5rem;
-  margin: 0;
+  padding: 2%;
+  height: 2rem;
   background-color: #f3f4ed;
   > li {
     list-style: none;
     text-align: right;
-    padding-left: 1%;
+    padding: 1%;
     font-size: 100%;
   }
    

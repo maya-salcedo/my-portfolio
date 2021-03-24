@@ -16,7 +16,6 @@ const Header = styled.h1`
   text-align: center;
   padding: 5% 5% 0 5%;
   margin: 0;
-
 `;
 
 const ContentWrapper = styled.div`
@@ -45,23 +44,19 @@ const Content = styled.div`
   }
 `;
 
-
-
-
-
 const Contact = () => {
-    return(
-        <ContainerWrapper>
-            <Header>Contact me</Header>
-            <ContentWrapper>
-                <li>maya.salcedo07@gmail.com</li>
-                <Content>
-                <a href="https://www.linkedin.com/in/mayasalcedo/" target="_blank" style={{color:'#046582'}}><FontAwesomeIcon icon={faLinkedin} className="icon" /> </a>
-                <a href="https://github.com/maya-salcedo" target="_blank" style={{color:'#393232'}}> <FontAwesomeIcon icon={faGithub} className="icon" /> </a>
-                </Content>         
-            </ContentWrapper>
-        </ContainerWrapper>
-    )
+  return (
+    <ContainerWrapper id="contact">
+      <Header>Contact me</Header>
+      <ContentWrapper>
+        <li>maya.salcedo07@gmail.com</li>
+        <Content>
+          <a href="https://www.linkedin.com/in/mayasalcedo/" target="_blank" style={{ color: '#046582' }}><FontAwesomeIcon icon={faLinkedin} className="icon" /> </a>
+          <a href="https://github.com/maya-salcedo" target="_blank" style={{ color: '#393232' }}> <FontAwesomeIcon icon={faGithub} className="icon" /> </a>
+        </Content>
+      </ContentWrapper>
+    </ContainerWrapper>
+  )
 }
 
 export default Contact;

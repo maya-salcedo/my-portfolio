@@ -35,7 +35,7 @@ const Ruler = styled.hr`
 const Home = () => {
   console.log("what is wrong");
   return(
-    <HomeWrapper>
+    <HomeWrapper id="home">
       <Header>I'm Maya Salcedo</Header>
       <Ruler />
       <CarouselWrapper />

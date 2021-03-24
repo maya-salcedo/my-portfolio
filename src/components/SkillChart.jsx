@@ -2,7 +2,7 @@ import React from 'react';
 import {HorizontalBar} from 'react-chartjs-2';
 import styled from 'styled-components';
 // eslint-disable-next-line
-import * as plugins from 'chartjs-plugin-deferred';
+
 
 
 const data = {

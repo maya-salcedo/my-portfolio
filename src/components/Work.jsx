@@ -45,16 +45,16 @@ const ImageWrapper = styled.img`
 `;
 
 const Work = () => {
-    return(
-        <ContainerWrapper>
-            <Header>My Work</Header>
-            <ContentWrapper>
-            <Content href="https://www.emanueleandmayawedding.com/">https://www.emanueleandmayawedding.com/</Content>
-            <ImageWrapper src={myInvitation} alt="invitation-img"/>
-            <p></p>
-            </ContentWrapper>
-        </ContainerWrapper>
-    )
+  return (
+    <ContainerWrapper id="work">
+      <Header>My Work</Header>
+      <ContentWrapper>
+        <Content href="https://www.emanueleandmayawedding.com/">https://www.emanueleandmayawedding.com/</Content>
+        <ImageWrapper src={myInvitation} alt="invitation-img" />
+        <p></p>
+      </ContentWrapper>
+    </ContainerWrapper>
+  )
 }
 
 export default Work;

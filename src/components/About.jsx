@@ -4,7 +4,7 @@ import myPicture from '../image/profile-img.jpg';
 
 const ContainerWrapper = styled.div`
   margin: 0;
-  padding: 5% 5%
+  padding: 5% 5%;
   
 `;
 
@@ -41,8 +41,9 @@ const ImageWrapper = styled.img`
 `;
 
 const About = () => {
+
     return(
-        <ContainerWrapper>
+        <ContainerWrapper id="about">
           <Header>About me</Header>
           <ContentWrapper>
             <Content>

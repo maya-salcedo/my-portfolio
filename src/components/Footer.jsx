@@ -11,7 +11,7 @@ const FooterWrapper = styled.footer`
 const Footer = () => {
   return(
     <div>
-      <FooterWrapper>
+      <FooterWrapper id="footer">
         <p>Copyright © Maya Salcedo {new Date().getFullYear()}</p>
       </FooterWrapper>
     </div>

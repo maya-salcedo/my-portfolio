@@ -22,3 +22,18 @@ p, a {
   color: #424642;
   font-family: 'Playfair Display SC', serif;
 }
+
+
+
+.paper {
+  margin: 5%;
+  padding: 1%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.paper:hover {
+  width: 5.5rem;
+  height: 5.5rem;
+  
+}

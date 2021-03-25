@@ -10,7 +10,7 @@ const HomeWrapper = styled.div`
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  height: 20rem;
+  height: 35rem;
   margin: 0;
 `;
 

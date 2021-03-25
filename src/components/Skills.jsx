@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SkillChart from './SkillChart';
+import SkillHex from './SkillHex';
 
 const ContainerWrapper = styled.div`
   margin: 0;
@@ -17,10 +17,10 @@ const Header = styled.h1`
 `;
 
 const ContentWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  item-align: center;
-  justify-content: center;
+  width:400px; 
+  margin-left:auto;
+  margin-right:auto;
+  
 `;
 
 
@@ -30,7 +30,7 @@ const Skills = () => {
         <ContainerWrapper>
             <Header>My Skills</Header>
             <ContentWrapper>
-            <SkillChart />
+            <SkillHex />
             </ContentWrapper>
         </ContainerWrapper>
     )

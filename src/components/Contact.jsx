@@ -7,7 +7,7 @@ const ContainerWrapper = styled.div`
   margin: 0;
   padding: 5% 5%;
   background-color: #f3f4ed;
-  height: 30rem;
+  height: 35rem;
 `;
 
 const Header = styled.h1`

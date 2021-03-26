@@ -10,8 +10,9 @@ const HomeWrapper = styled.div`
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  height: 35rem;
+  height: 100vh;
   margin: 0;
+  max-width: 100%;
 `;
 
 const Header = styled.h1`
@@ -19,12 +20,10 @@ const Header = styled.h1`
   font-weight: 500;
   font-size: 4rem;
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 40vh;
   margin: 0 auto;
   text-shadow: 0 0 10px #865858, 2px 2px 3px rgba(236,223,200,0.05);
 `;
-
-
 
 const Ruler = styled.hr`
   width: 30%;

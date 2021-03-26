@@ -20,14 +20,14 @@ const ContentWrapper = styled.div`
   width:400px; 
   margin-left:auto;
   margin-right:auto;
-  
+
 `;
 
 
 
 const Skills = () => {
     return(
-        <ContainerWrapper>
+        <ContainerWrapper id="skills">
             <Header>My Skills</Header>
             <ContentWrapper>
             <SkillHex />

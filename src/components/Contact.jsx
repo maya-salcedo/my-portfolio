@@ -1,27 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import Header from '../elements/SectionWrapper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
  /* eslint-disable */ 
 
 const ContainerWrapper = styled.div`
   margin: 0;
-  padding: 5% 5%;
+  padding: 1% 5% 2%;
+  height: 100vh;
   background-color: #f3f4ed;
-  height: 35rem;
 `;
 
-const Header = styled.h1`
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
-  padding: 5% 5% 0 5%;
-  margin: 0;
-`;
 
 const ContentWrapper = styled.div`
   justify-content: center;
-  > li {
+  > a {
     list-style: none;
     text-align: center;
     padding: 2%;
@@ -50,7 +44,7 @@ const Contact = () => {
     <ContainerWrapper id="contact">
       <Header>Contact me</Header>
       <ContentWrapper>
-        <li>maya.salcedo07@gmail.com</li>
+        <a href="mailto:maya.salcedo07@gmail.com"><p>maya.salcedo07@gmail.com</p></a>
         <Content>
           <a href="https://www.linkedin.com/in/mayasalcedo/" target="_blank" style={{ color: '#046582' }}><FontAwesomeIcon icon={faLinkedin} className="icon" /> </a>
           <a href="https://github.com/maya-salcedo" target="_blank" style={{ color: '#393232' }}> <FontAwesomeIcon icon={faGithub} className="icon" /> </a>

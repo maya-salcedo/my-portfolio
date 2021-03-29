@@ -12,51 +12,36 @@ import Pycharm_logo from '../image/logos/Pycharm_logo.png';
 import Python_logo from '../image/logos/Python_logo.png';
 import Vscode_logo from '../image/logos/Vscode_logo.png';
 import Github_logo from '../image/logos/Github_logo.png';
+import Bootstrap_logo from '../image/logos/Bootstrap_logo.png';
 
 const SkillWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 5px 5px;
-  grid-template-areas:
-    ". . . ."
-    ". . . ."
-    ". . . .";
-  width: 15rem;
-  height: 20rem;
-  text-align: center;
-  margin: 1rem 3rem;
-  padding: 1rem, 3rem;
-  @media(max-width: 400px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 4rem;
-    height: 100%;
-    grid-template-areas:
-    ". ."
-    ". ."
-    ". ."
-    ". ."
-    ". ."
-    ". .";
-  }
+  display: flex;
+  flex-wrap: wrap;
+  item-align: center;
+  justify-content: center;
+  padding-top: 5%;
 `;
 
+// const CardWrapper = styled.div`
+//   width: 28rem;
+//   height: 100%;
+//   padding: 2%;
+// `;
+
 const Card = styled.div`
-  width: 6rem;
-  height: 6rem;
-  
+  width: 7rem;
+  height: 7rem; 
 `;
 
 const LogoWrapper = styled.img`
-  width: 15vmin;
-  height: 15vmin;
-  padding: 2vmin;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
 `;
 
-const SkillHex = () => {
+const SkillLogos = () => {
 
-  const listOfLogo = [React_logo, Javascript_logo, CSS_logo, Express_logo, Node_logo, Docker_logo, HTML5_logo, Postgresql_logo, Pycharm_logo, Python_logo, Vscode_logo, Github_logo];
+  const listOfLogo = [React_logo, Javascript_logo, CSS_logo, HTML5_logo, Node_logo,  Express_logo, Docker_logo,  Postgresql_logo,  Vscode_logo, Github_logo, Bootstrap_logo, Python_logo, Pycharm_logo ];
   
   return(
     <SkillWrapper>
@@ -76,4 +61,4 @@ const SkillHex = () => {
   );
 }
 
-export default SkillHex; 
+export default SkillLogos; 

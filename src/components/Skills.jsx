@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SkillHex from './SkillHex';
+import SkillLogos from './SkillLogos';
 import Header from '../elements/SectionWrapper';
 
 const ContainerWrapper = styled.div`
@@ -25,7 +25,7 @@ const Skills = () => {
         <ContainerWrapper id="skills">
             <Header>My Skills</Header>
             <ContentWrapper>
-            <SkillHex />
+            <SkillLogos />
             </ContentWrapper>
         </ContainerWrapper>
     )

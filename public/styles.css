@@ -39,8 +39,8 @@ p, a {
 
 
 .card:hover {
-  background: linear-gradient(#ffefa1, #94ebcd, #ffcb91);
-  animation: rotate 3s linear infinite;
+  background: linear-gradient(#5eaaa8, #a3d2ca, #f8f1f1);
+  animation: rotate 1s linear infinite;
   border-radius: 5%;
   
 }

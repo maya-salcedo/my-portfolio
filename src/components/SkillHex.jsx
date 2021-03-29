@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Avatar, Paper} from '@material-ui/core/';
 import React_logo from '../image/logos/React_logo.png';
 import Javascript_logo from '../image/logos/JavaScript_logo.png';
 import CSS_logo from '../image/logos/CSS_logo.png';
@@ -43,9 +42,16 @@ const SkillWrapper = styled.div`
   }
 `;
 
+const Card = styled.div`
+  width: 6rem;
+  height: 6rem;
+  
+`;
+
 const LogoWrapper = styled.img`
-  width: 5rem;
-  height: 5rem;
+  width: 15vmin;
+  height: 15vmin;
+  padding: 2vmin;
 `;
 
 const SkillHex = () => {
@@ -56,9 +62,13 @@ const SkillHex = () => {
     <SkillWrapper>
       {listOfLogo.map((logo) => {
         return(
-          <Paper elevation={3}  className="paper">
+          <div>
+          <Card className="card">
             <LogoWrapper className="logo" src={logo} />
-          </Paper>
+          </Card>
+          
+          </div>
+          
         ) 
         })
       }

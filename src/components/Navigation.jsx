@@ -27,6 +27,9 @@ const NavigationWrapper = styled.div`
     @media(max-width: 768px) {
       padding: 0.5% 3%;
     }
+    @media(max-width: 400px) {
+      padding: 0.5% 0.5%;
+    }
   }
 `;
 

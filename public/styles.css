@@ -38,16 +38,17 @@ p, a {
 }
 
 
-
-.paper {
-  margin: 5%;
-  padding: 1%;
-  width: 5rem;
-  height: 5rem;
-}
-
-.paper:hover {
-  width: 5.5rem;
-  height: 5.5rem;
+.card:hover {
+  background: linear-gradient(#ffefa1, #94ebcd, #ffcb91);
+  animation: rotate 3s linear infinite;
+  border-radius: 5%;
   
 }
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }

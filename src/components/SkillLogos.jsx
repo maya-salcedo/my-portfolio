@@ -14,6 +14,7 @@ import Vscode_logo from '../image/logos/Vscode_logo.png';
 import Github_logo from '../image/logos/Github_logo.png';
 import Bootstrap_logo from '../image/logos/Bootstrap_logo.png';
 
+
 const SkillWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -59,15 +60,13 @@ const LogoWrapper = styled.img`
 const listOfLogo = [React_logo, Javascript_logo, CSS_logo, HTML5_logo, Node_logo,  Express_logo, Docker_logo,  Postgresql_logo,  Vscode_logo, Github_logo, Bootstrap_logo, Python_logo, Pycharm_logo ];
 
 const SkillLogos = () => {
-  
   return(
     <SkillWrapper>
-      {listOfLogo.map((logo) => {
-        console.log(logo);
+      {listOfLogo.map((logo, index) => {
         return(
           <div>
-          <Card className="card">
-            <LogoWrapper className="logo" src={logo} />
+          <Card className="card" key={index} >
+            <LogoWrapper className="logo" src={logo}  />
           </Card>
           </div> 
         ) 

@@ -11,9 +11,8 @@ const ContainerWrapper = styled.div`
   background-color: #f3f4ed;
   margin: 0;
   padding: 1% 5% 10%;
-  height: 100vh;
+  height: 100%;
   @media(max-width: 1418px){
-    height: 100%;
     padding: 5% 5%;
   }
 `;
@@ -41,6 +40,9 @@ const Content = styled.div`
   padding: 3% 2%;
   width: 30rem;
   height: auto;
+  @media(max-width: 724px){
+    padding: 5% 7%;
+  }
 `;
 
 
@@ -84,7 +86,7 @@ const listOfProjects = [
     projectUrl: "https://gofile.io/d/ud3MBM",
     imageOfproject: offlineDictionary,
     description1: "This is an offline English dictionary mobile application created using Kivy, an open source Python framework for rapid development of applications that make use of innovative user interfaces. Data are stored in a .json file so no internet connection is needed after downloading.",
-    description2: "",
+    description2: "The app can be installed by downloading the APK file at the above link.",
     gitHubURL: "https://github.com/maya-salcedo/offline-english-dictionary-kivy-app"
   }
 ] 
@@ -93,7 +95,7 @@ const Project = () => {
   return (
     <ContainerWrapper id="project">
       <Header>My Projects</Header>
-      <Carousel useKeyboardArrows showThumbs={false} autoPlay={false}>
+      <Carousel useKeyboardArrows showThumbs={false} interval={20000} transitionTime={1000}>
       {listOfProjects.map((project, index) => {
         console.log(project.projectUrl);
         return(

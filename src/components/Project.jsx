@@ -93,7 +93,7 @@ const Project = () => {
   return (
     <ContainerWrapper id="project">
       <Header>My Projects</Header>
-      <Carousel useKeyboardArrows showThumbs >
+      <Carousel useKeyboardArrows showThumbs={false} autoPlay={false}>
       {listOfProjects.map((project, index) => {
         console.log(project.projectUrl);
         return(

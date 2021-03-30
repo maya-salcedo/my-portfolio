@@ -61,10 +61,10 @@ const LinkWrapper = styled.p`
   padding-bottom: 2%;
 `;
 
-const Work = () => {
+const Project = () => {
   return (
-    <ContainerWrapper id="work">
-      <Header>My Work</Header>
+    <ContainerWrapper id="project">
+      <Header>My Projects</Header>
       <ContentWrapper>
       <ImagewithATagWrapper>
         <a href="https://www.emanueleandmayawedding.com/" target="_blank"><ImageWrapper src={myInvitation} alt="wedding-invitation"/></a>
@@ -74,7 +74,7 @@ const Work = () => {
       <Content>
         <a href="https://www.emanueleandmayawedding.com/" target="_blank"><LinkWrapper>https://www.emanueleandmayawedding.com/</LinkWrapper></a>
         <TextWrapper>
-        This project is an online wedding invitation that has RSVP feature where invited guests confirm their attendance through the website and the data is saved on the database. They will also get a confirmation email after they send their RSVP. 
+        This project is an online wedding invitation that has RSVP feature where invited guests confirm their attendance through the website and the data is saved on the database. They will also get a confirmation email after sending their RSVP. 
         </TextWrapper>
         <TextWrapper>
         React, Node, Express, PostgreSQL, Nodemailer, Google API, Docker are among the technologies used in this project.
@@ -88,4 +88,4 @@ const Work = () => {
   )
 }
 
-export default Work;
+export default Project;

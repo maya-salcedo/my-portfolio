@@ -5,7 +5,7 @@ import Header from '../elements/SectionWrapper';
 
 const ContainerWrapper = styled.div`
   margin: 0;
-  padding: 5% 5%;
+  padding: 1% 5% 5%;
 `;
 
 const ContentWrapper = styled.div`

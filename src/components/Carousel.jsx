@@ -14,7 +14,7 @@ const Description = styled.h2`
 
 const CarouselWrapper = () => {
   return (
-    <Carousel infiniteLoop useKeyboardArrows autoPlay showIndicators={false} showStatus={false} transitionTime={300} interval={3000}>
+    <Carousel infiniteLoop useKeyboardArrows autoPlay showIndicators={false} showStatus={false} transitionTime={300} interval={3000} showThumbs={false}>
       <Description>a web developer</Description>        
       <Description>fast learner</Description>
       <Description>strongly motivated</Description>

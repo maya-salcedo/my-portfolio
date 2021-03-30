@@ -24,11 +24,16 @@ const NavigationWrapper = styled.div`
     text-align: right;
     padding: 0 2%;
     font-size: 100%;
+    cursor: pointer;
     @media(max-width: 768px) {
       padding: 0.5% 3%;
     }
-    @media(max-width: 400px) {
-      padding: 0.5% 0.5%;
+    @media(max-width: 420px) {
+      padding: 0.5% 1.6% 0.5% 1%;
+    }
+    @media(max-width: 336px) {
+      padding: 1.5% 1.6% 1.2% 1%;
+      font-size: 90%;
     }
   }
 `;
@@ -42,7 +47,7 @@ const Navigation = () => {
       <NavigationWrapper>
         <li onClick={handleClick} className="nav-link"  link="home">Home</li>
         <li onClick={handleClick} className="nav-link" link="about">About</li>
-        <li onClick={handleClick} className="nav-link" link="work">Work</li>
+        <li onClick={handleClick} className="nav-link" link="project">Project</li>
         <li onClick={handleClick} className="nav-link" link="skills">Skills</li>
         <li onClick={handleClick} className="nav-link" link="contact">Contact</li>
       </NavigationWrapper>

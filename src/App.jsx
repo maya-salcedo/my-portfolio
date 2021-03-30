@@ -1,8 +1,9 @@
 import React from 'react';
+import GlobalStyle from './elements/GlobalStyle';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import About from './components/About';
-import Work from './components/Work';
+import Project from './components/Project';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -10,13 +11,14 @@ import Footer from './components/Footer';
 const App = () => {
   return(
     <div>
-      <Navigation />
-      <Home />
-      <About />
-      <Work />
-      <Skills />
-      <Contact />
-      <Footer />
+      <GlobalStyle />
+        <Navigation />
+        <Home />
+        <About />
+        <Project />
+        <Skills />
+        <Contact />
+        <Footer />
     </div>     
   );
 }

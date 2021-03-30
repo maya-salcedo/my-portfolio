@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import React_logo from '../image/logos/React_logo.png';
 import Javascript_logo from '../image/logos/JavaScript_logo.png';
 import CSS_logo from '../image/logos/CSS_logo.png';
@@ -19,18 +19,35 @@ const SkillWrapper = styled.div`
   flex-wrap: wrap;
   item-align: center;
   justify-content: center;
-  padding-top: 5%;
+  padding: 10% 20%;
+  @media(max-width: 1140px){
+    padding: 7% 15%;
+  }
+  @media(max-width: 999px){
+    padding: 5% 10%;
+  }
+  @media(max-width: 355px){
+    padding: 5% 3%;
+  }
 `;
 
-// const CardWrapper = styled.div`
-//   width: 28rem;
-//   height: 100%;
-//   padding: 2%;
-// `;
+const rotate = keyframes`
+  0% {
+      filter: hue-rotate(0deg);
+    }
+  100% {
+      filter: hue-rotate(360deg);
+    }
+`;
 
 const Card = styled.div`
   width: 7rem;
   height: 7rem; 
+  &:hover {
+    background: linear-gradient(#5eaaa8, #a3d2ca, #f8f1f1);
+    animation: ${rotate} 1s linear infinite;
+    border-radius: 5%;
+  }
 `;
 
 const LogoWrapper = styled.img`
@@ -39,21 +56,20 @@ const LogoWrapper = styled.img`
   padding: 1rem;
 `;
 
-const SkillLogos = () => {
+const listOfLogo = [React_logo, Javascript_logo, CSS_logo, HTML5_logo, Node_logo,  Express_logo, Docker_logo,  Postgresql_logo,  Vscode_logo, Github_logo, Bootstrap_logo, Python_logo, Pycharm_logo ];
 
-  const listOfLogo = [React_logo, Javascript_logo, CSS_logo, HTML5_logo, Node_logo,  Express_logo, Docker_logo,  Postgresql_logo,  Vscode_logo, Github_logo, Bootstrap_logo, Python_logo, Pycharm_logo ];
+const SkillLogos = () => {
   
   return(
     <SkillWrapper>
       {listOfLogo.map((logo) => {
+        console.log(logo);
         return(
           <div>
           <Card className="card">
             <LogoWrapper className="logo" src={logo} />
           </Card>
-          
-          </div>
-          
+          </div> 
         ) 
         })
       }

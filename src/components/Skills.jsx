@@ -18,17 +18,15 @@ const ContentWrapper = styled.div`
   }
 `;
 
-
-
 const Skills = () => {
-    return(
-        <ContainerWrapper id="skills">
-            <Header>My Skills</Header>
-            <ContentWrapper>
-            <SkillLogos />
-            </ContentWrapper>
-        </ContainerWrapper>
-    )
+  return(
+    <ContainerWrapper id="skills">
+      <Header>My Skills</Header>
+      <ContentWrapper>
+        <SkillLogos />
+      </ContentWrapper>
+    </ContainerWrapper>
+  );
 }
 
 export default Skills;

@@ -39,7 +39,6 @@ p, a {
              -23px -23px 49px #ffffff;
   }
 }
-
 `;
 
 export default GlobalStyle;

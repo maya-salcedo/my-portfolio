@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import weddingInvitation from '../image/invitation-img.PNG';
-import offlineDictionary from '../image/offlineDictionary-img.PNG';
+import '../elements/ProjectCarousel.css';
+import weddingInvitation from '../image/projects/invitation-img.PNG';
+import offlineDictionary from '../image/projects/offlineDictionary-img.PNG';
 import Header from '../elements/SectionWrapper';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
  /* eslint-disable */ 
 
@@ -95,31 +96,28 @@ const Project = () => {
   return (
     <ContainerWrapper id="project">
       <Header>My Projects</Header>
-      <Carousel useKeyboardArrows showThumbs={false} interval={20000} transitionTime={1000}>
+      <Carousel useKeyboardArrows showThumbs={false} interval={20000} transitionTime={1000} showArrows={false}>
       {listOfProjects.map((project, index) => {
-        console.log(project.projectUrl);
         return(
-        <ContentWrapper>
+        <ContentWrapper key={project.nameOfProject}>
           <ImagewithATagWrapper>
            <a href={project?.projectUrl} target="_blank"><ImageWrapper src={project?.imageOfproject} alt={project?.nameOfProject} /></a>
           </ImagewithATagWrapper>
-        <Content>
-          <ProjectTitle>{project?.nameOfProject}</ProjectTitle>
-          <a href={project?.projectUrl} target="_blank"><LinkWrapper>{project?.projectUrl}</LinkWrapper></a>
-          <TextWrapper>
-          {project?.description1}
-          </TextWrapper>
-          <TextWrapper>
-          {project?.description2}
-          </TextWrapper>
-          <TextWrapper>Check out the code in Github. Click <a href={project?.gitHubURL}  target="_blank">here</a>.</TextWrapper>
+          <Content>
+            <ProjectTitle>{project?.nameOfProject}</ProjectTitle>
+            <a href={project?.projectUrl} target="_blank"><LinkWrapper>{project?.projectUrl}</LinkWrapper></a>
+            <TextWrapper>
+            {project?.description1}
+            </TextWrapper>
+            <TextWrapper>
+            {project?.description2}
+            </TextWrapper>
+            <TextWrapper>Check out the code in Github. Click <a href={project?.gitHubURL}  target="_blank">here</a>.</TextWrapper>
           </Content>  
-      </ContentWrapper>
+        </ContentWrapper>
       )
       })}
       </Carousel>
-            
-        
     </ContainerWrapper>
   )
 }

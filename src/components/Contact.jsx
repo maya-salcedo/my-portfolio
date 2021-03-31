@@ -12,7 +12,6 @@ const ContainerWrapper = styled.div`
   background-color: #f3f4ed;
 `;
 
-
 const ContentWrapper = styled.div`
   justify-content: center;
   > a {
@@ -51,7 +50,7 @@ const Contact = () => {
         </Content>
       </ContentWrapper>
     </ContainerWrapper>
-  )
+  );
 }
 
 export default Contact;

@@ -64,8 +64,8 @@ const SkillLogos = () => {
     <SkillWrapper>
       {listOfLogo.map((logo, index) => {
         return(
-          <div>
-          <Card className="card" key={index} >
+          <div key={logo}>
+          <Card className="card"  >
             <LogoWrapper className="logo" src={logo}  />
           </Card>
           </div> 

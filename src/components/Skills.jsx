@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import SkillLogos from './SkillLogos';
-import Header from '../elements/SectionWrapper';
+import Header from '../elements/Header';
 
 const ContainerWrapper = styled.div`
   margin: 0;
-  padding: 5% 5%;
+  padding: 1% 5% 5%;
 `;
 
 const ContentWrapper = styled.div`
@@ -18,17 +18,15 @@ const ContentWrapper = styled.div`
   }
 `;
 
-
-
 const Skills = () => {
-    return(
-        <ContainerWrapper id="skills">
-            <Header>My Skills</Header>
-            <ContentWrapper>
-            <SkillLogos />
-            </ContentWrapper>
-        </ContainerWrapper>
-    )
+  return(
+    <ContainerWrapper id="skills">
+      <Header>My Skills</Header>
+      <ContentWrapper>
+        <SkillLogos />
+      </ContentWrapper>
+    </ContainerWrapper>
+  );
 }
 
 export default Skills;

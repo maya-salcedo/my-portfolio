@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../elements/SectionWrapper';
+import Header from '../elements/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
  /* eslint-disable */ 
@@ -11,7 +11,6 @@ const ContainerWrapper = styled.div`
   height: 100vh;
   background-color: #f3f4ed;
 `;
-
 
 const ContentWrapper = styled.div`
   justify-content: center;
@@ -39,8 +38,7 @@ const Content = styled.div`
   }
 `;
 
-const Contact = () => {
-  return (
+const Contact = () => (
     <ContainerWrapper id="contact">
       <Header>Contact me</Header>
       <ContentWrapper>
@@ -51,7 +49,6 @@ const Contact = () => {
         </Content>
       </ContentWrapper>
     </ContainerWrapper>
-  )
-}
+);
 
 export default Contact;

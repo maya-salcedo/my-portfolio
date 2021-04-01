@@ -1,0 +1,19 @@
+.carousel .control-dots .dot {
+  background: #276678;
+  border-radius: 0%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel .carousel-status {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #276678;
+  text-shadow: unset;
+}
+
+.carousel {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}

@@ -8,14 +8,12 @@ const FooterWrapper = styled.footer`
   color: #9e9d89;
 `;
 
-const Footer = () => {
-  return(
+const Footer = () => (
     <div>
       <FooterWrapper id="footer">
         <p>Copyright © Maya Salcedo {new Date().getFullYear()}</p>
       </FooterWrapper>
     </div>
-  )
-}
+);
 
 export default Footer;

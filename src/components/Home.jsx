@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CarouselWrapper from './Carousel';
-
-
+import CarouselWrapper from './HomeCarousel';
 
 const HomeWrapper = styled.div`
   background-image: url('https://images.unsplash.com/photo-1591548745205-001fd9ef73f2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
@@ -31,15 +29,13 @@ const Ruler = styled.hr`
 
 `;
 
-const Home = () => {
-  console.log("what is wrong");
-  return(
+const Home = () => (
     <HomeWrapper id="home">
       <Header>I'm Maya Salcedo</Header>
       <Ruler />
       <CarouselWrapper />
     </HomeWrapper>
-  );
-}
+);
+
 
 export default Home;

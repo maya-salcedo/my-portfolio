@@ -8,9 +8,9 @@
 .carousel .carousel-status {
   font-size: 1.1rem;
   font-weight: 600;
+  font-style: italic;
   color: #276678;
   text-shadow: unset;
-  padding: 1rem 2rem;
 }
 
 .carousel {

@@ -12,8 +12,7 @@ const Description = styled.h2`
   text-shadow: 0 0 10px #865858, 2px 2px 3px rgba(236,223,200,0.05);
 `;
 
-const CarouselWrapper = () => {
-  return (
+const CarouselWrapper = () => (
     <Carousel infiniteLoop useKeyboardArrows autoPlay showIndicators={false} showStatus={false} transitionTime={300} interval={3000} showThumbs={false}>
       <Description>a web developer</Description>        
       <Description>fast learner</Description>
@@ -21,7 +20,7 @@ const CarouselWrapper = () => {
       <Description>result-oriented</Description>
       <Description>team player</Description>
     </Carousel>
-  );
-}
+ );
+
 
 export default CarouselWrapper; 

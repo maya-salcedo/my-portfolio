@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import myPicture from '../image/profile-img.jpg';
-import Header from '../elements/SectionWrapper';
+import Header from '../elements/Header';
 
 const  ContainerWrapper = styled.div`
   margin: 0;
@@ -39,8 +39,7 @@ const ImageWrapper = styled.img`
   margin: 1rem;
 `;
 
-const About = () => {
-  return(
+const About = () => (
     <ContainerWrapper id="about">
       <Header>About me</Header>
       <ContentWrapper>
@@ -55,7 +54,7 @@ const About = () => {
         <ImageWrapper src={myPicture} alt="profile-img"/>
       </ContentWrapper>
     </ContainerWrapper>
-  )
-}
+);
+
 
 export default About;

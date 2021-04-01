@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SkillLogos from './SkillLogos';
-import Header from '../elements/SectionWrapper';
+import Header from '../elements/Header';
 
 const ContainerWrapper = styled.div`
   margin: 0;

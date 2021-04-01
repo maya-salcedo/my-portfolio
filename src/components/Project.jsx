@@ -4,8 +4,6 @@ import '../elements/ProjectCarousel.css';
 import Header from '../elements/Header';
 import ProjectCarousel from './ProjectCarousel';
 
- /* eslint-disable */ 
-
 const ContainerWrapper = styled.div`
   background-color: #f3f4ed;
   margin: 0;
@@ -16,15 +14,12 @@ const ContainerWrapper = styled.div`
   }
 `;
 
+const Project = () => (
+  <ContainerWrapper id="project">
+    <Header>My Projects</Header>
+    <ProjectCarousel />
+  </ContainerWrapper>
+);
 
-
-const Project = () => {
-  return (
-    <ContainerWrapper id="project">
-      <Header>My Projects</Header>
-      <ProjectCarousel />
-    </ContainerWrapper>
-  )
-}
 
 export default Project;

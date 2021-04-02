@@ -5,7 +5,7 @@ import Header from '../elements/Header';
 
 const  ContainerWrapper = styled.div`
   margin: 0;
-  padding: 1% 5% 2%;
+  padding: 1% 5% 5%;
   height: 100vh;
   @media(max-width: 1066px){
     height: 100%;
@@ -45,7 +45,7 @@ const About = () => (
       <ContentWrapper>
         <Content>
           <TextWrapper>
-          I'm obsessed with creating things and making it better. When I discovered that I can build awesome things with coding, I couldn't stop thinking and wishing to have more time to get my hands on the keyboard. My current goal is to work with a great team to learn more and build better web apps.
+          I'm obsessed with creating things and making it better. When I discovered that I can build awesome things with coding, I couldn't stop thinking and wishing to have more time to get my hands on the keyboard. My current goal is to work with a great team to learn more and build high quality web apps.
           </TextWrapper>
           <TextWrapper>
           I am located in Vihti, Finland. I have a degree in BS Nursing from Philippines and completed 150 credits in BS International Businees in Arcada UAS. Currently I am working as a nurse but I become so passionate about coding that I code everyday and I see myself doing this kind of work. 

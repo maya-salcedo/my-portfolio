@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import myPicture from '../image/profile-img.jpg';
+//import myPicture from 'image/profile-img.jpg';
 import Header from '../elements/Header';
 
 const  ContainerWrapper = styled.div`
@@ -51,7 +51,7 @@ const About = () => (
           I am located in Vihti, Finland. I have a degree in BS Nursing from Philippines and completed 150 credits in BS International Businees in Arcada UAS. Currently I am working as a nurse but I become so passionate about coding that I code everyday and I see myself doing this kind of work. 
           </TextWrapper>
         </Content>
-        <ImageWrapper src={myPicture} alt="profile-img"/>
+        <ImageWrapper src="image/profile-img.jpg" alt="profile-img"/>
       </ContentWrapper>
     </ContainerWrapper>
 );

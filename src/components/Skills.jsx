@@ -23,7 +23,7 @@ const Skills = () => {
     <ContainerWrapper id="skills">
       <Header>My Skills</Header>
       <ContentWrapper>
-        <SkillLogos />
+      <SkillLogos />
       </ContentWrapper>
     </ContainerWrapper>
   );

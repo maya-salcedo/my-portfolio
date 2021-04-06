@@ -28,11 +28,14 @@ const NavigationWrapper = styled.div`
     @media(max-width: 768px) {
       padding: 0.5% 3%;
     }
-    @media(max-width: 420px) {
-      padding: 0.5% 1.6% 0.5% 1%;
+    @media(max-width: 507px) {
+      padding: 0.6% 1.4% 0.6% 1%;
     }
-    @media(max-width: 336px) {
-      padding: 1.5% 1.6% 1.2% 1%;
+    @media(max-width: 411px) {
+      padding: 1.6% 1.4% 1.5% 1%;
+    }
+    @media(max-width: 383px) {
+      padding: 2% 1.4% 2% 1%;
       font-size: 90%;
     }
   }

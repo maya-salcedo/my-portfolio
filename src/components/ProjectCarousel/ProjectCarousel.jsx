@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import listOfProjects from '../elements/listOfProjects.js';
+import listOfProjects from '../../data/listOfProjects.js';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
  /* eslint-disable */ 
- 
+
 const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;

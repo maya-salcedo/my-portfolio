@@ -58,7 +58,7 @@ const LogoWrapper = styled.img`
   padding: 1rem;
 `;
 
-const listOfLogo = ["React_logo", "Javascript_logo", "CSS_logo", "HTML5_logo", "Node_logo",  "Express_logo", "Docker_logo",  "Postgresql_logo",  "Vscode_logo", "Github_logo", "Heroku_logo", "Bootstrap_logo", "Python_logo", "Pycharm_logo" ];
+const listOfLogo = ["React_logo", "JavaScript_logo", "CSS_logo", "HTML5_logo", "Node_logo",  "Express_logo", "Docker_logo",  "Postgresql_logo",  "Vscode_logo", "Github_logo", "Heroku_logo", "Bootstrap_logo", "Python_logo", "Pycharm_logo" ];
 
 const SkillLogos = () => {
   return(

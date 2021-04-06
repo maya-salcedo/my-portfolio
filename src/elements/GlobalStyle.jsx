@@ -28,16 +28,10 @@ p, a {
 
 .nav-link:hover {
   color: #151515;
-  border-radius: 4px;
+  border-radius: 1px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow:  11px 11px 7px #5a5a5a,
-             -11px -11px 7px #ffffff;
-  @media(max-width: 768px) {
-    border-radius: 5px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  23px 23px 49px #a4a4a4,
-             -23px -23px 49px #ffffff;
-  }
+  box-shadow:  5px 5px 3px #5a5a5a,
+             -5px -5px 3px #ffffff;
 }
 `;
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import '../elements/ProjectCarousel.css';
+import './/ProjectCarousel/ProjectCarousel.css';
 import Header from '../elements/Header';
-import ProjectCarousel from './ProjectCarousel';
+import ProjectCarousel from './ProjectCarousel/ProjectCarousel';
 
 const ContainerWrapper = styled.div`
   background-color: #f3f4ed;

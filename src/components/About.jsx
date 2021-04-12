@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-//import myPicture from 'image/profile-img.jpg';
 import Header from '../elements/Header';
 
 const  ContainerWrapper = styled.div`
@@ -55,6 +54,5 @@ const About = () => (
       </ContentWrapper>
     </ContainerWrapper>
 );
-
 
 export default About;

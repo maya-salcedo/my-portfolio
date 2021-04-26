@@ -16,6 +16,14 @@ const listOfProjects = [
     gitHubURL: "https://github.com/maya-salcedo/ToDo-App"
   },
   {
+    nameOfProject: "Note App",
+    projectUrl: "https://mysimplenoteapp.herokuapp.com/",
+    imageOfproject: "image/projects/note-img.PNG",
+    description1: "This is a simple note taking application with database.",
+    description2: "React, Node, Express and PostgreSQL are among the technologies used in this project.",
+    gitHubURL: "https://github.com/maya-salcedo/Note-App"
+  },
+  {
     nameOfProject: "Offline Dictionary",
     projectUrl: "",
     imageOfproject: "image/projects/offlineDictionary-img.PNG",

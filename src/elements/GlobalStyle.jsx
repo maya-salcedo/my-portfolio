@@ -33,9 +33,38 @@ p, a {
   box-shadow:  5px 5px 3px #5a5a5a,
              -5px -5px 3px #ffffff;
 }
+${'' /* hamburger menu */}
+aside {
+  position: fixed;
+  width: 30rem;
+  height: 100%;
+  background-color: #efefef;
+  z-index: 1000;
+  transform: translateX(-30rem);
+  transition: all 0.5s;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.open {
+  transform: translateX(0);
+}
+
+.sidebar:hover {
+  color: #f0c040;
+  border: none;
+}
+aside ul {
+  padding: 0;
+  list-style: none;
+}
+aside li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.close-sidebar {
+  padding: 0.3rem 0.8rem;
+}
 `;
 
 export default GlobalStyle;
-
-
-

@@ -5,11 +5,11 @@ import Header from '../elements/Header';
 import ProjectCarousel from './ProjectCarousel/ProjectCarousel';
 
 const ContainerWrapper = styled.div`
-  background-color: #f3f4ed;
+  background-color: #e4e3e3;
   margin: 0;
   padding: 1% 5% 10%;
   height: 100%;
-  @media(max-width: 1418px){
+  @media (max-width: 1418px) {
     padding: 5% 5%;
   }
 `;
@@ -20,6 +20,5 @@ const Project = () => (
     <ProjectCarousel />
   </ContainerWrapper>
 );
-
 
 export default Project;

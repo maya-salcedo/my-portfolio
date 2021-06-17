@@ -12,7 +12,7 @@ const HamburgerWrapper = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  background: #84a9ac;
+  background: #204051;
   z-index: 3;
   > button {
     font-size: 2rem;
@@ -37,7 +37,7 @@ const NavigationWrapper = styled.div`
   width: 100%;
   padding: 2%;
   height: 1.5rem;
-  background-color: #f3f4ed;
+  background-color: #204051;
   z-index: 3;
   > li {
     list-style: none;

@@ -8,15 +8,24 @@ const HamburgerWrapper = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  height: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #84a9ac;
+  z-index: 3;
   > button {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0.2rem 0.5rem;
     margin: 0 0.5rem;
     background: none;
     color: #ffffff;
     cursor: pointer;
     border: none;
+  }
+  > h2 {
+    color: #ffffff;
+    padding-right: 0.5rem;
   }
 `;
 
@@ -36,19 +45,6 @@ const NavigationWrapper = styled.div`
     padding: 0 2%;
     font-size: 100%;
     cursor: pointer;
-    @media (max-width: 768px) {
-      padding: 0.5% 3%;
-    }
-    @media (max-width: 507px) {
-      padding: 0.6% 1.4% 0.6% 1%;
-    }
-    @media (max-width: 411px) {
-      padding: 1.6% 1.4% 1.5% 1%;
-    }
-    @media (max-width: 383px) {
-      padding: 2% 1.4% 2% 1%;
-      font-size: 90%;
-    }
   }
 `;
 
@@ -92,6 +88,8 @@ const Navigation = () => {
           <button type="button" onClick={() => setSidebarIsOpen(true)}>
             <FontAwesomeIcon icon={faBars} className="icon" />
           </button>
+
+          <h2>Maya Salcedo</h2>
         </HamburgerWrapper>
       )}
       <aside className={sidebarIsOpen ? 'open' : ''}>

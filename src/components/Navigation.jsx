@@ -1,5 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+const HamburgerWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  > button {
+    font-size: 3rem;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.5rem;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+  }
+`;
 
 const NavigationWrapper = styled.div`
   display: flex;
@@ -11,14 +30,6 @@ const NavigationWrapper = styled.div`
   height: 1.5rem;
   background-color: #f3f4ed;
   z-index: 3;
-  @media (max-width: 768px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 4% 2%;
-    height: 2rem;
-  }
   > li {
     list-style: none;
     text-align: right;
@@ -77,11 +88,11 @@ const Navigation = () => {
         </NavigationWrapper>
       )}
       {!isDesktop && (
-        <div>
+        <HamburgerWrapper>
           <button type="button" onClick={() => setSidebarIsOpen(true)}>
-            M
+            <FontAwesomeIcon icon={faBars} className="icon" />
           </button>
-        </div>
+        </HamburgerWrapper>
       )}
       <aside className={sidebarIsOpen ? 'open' : ''}>
         <ul onClick={() => setSidebarIsOpen(false)}>

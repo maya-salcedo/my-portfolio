@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const HamburgerWrapper = styled.div`
   position: fixed;
@@ -26,6 +26,8 @@ const HamburgerWrapper = styled.div`
   > h2 {
     color: #ffffff;
     padding-right: 0.5rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
   }
 `;
 
@@ -94,19 +96,28 @@ const Navigation = () => {
       )}
       <aside className={sidebarIsOpen ? 'open' : ''}>
         <ul onClick={() => setSidebarIsOpen(false)}>
-          <li onClick={handleClick} className="nav-link" link="home">
+          <li>
+            <button
+              onClick={() => setSidebarIsOpen(false)}
+              className="close-sidebar"
+              type="button"
+            >
+              <FontAwesomeIcon icon={faTimes} className="icon" />
+            </button>
+          </li>
+          <li onClick={handleClick} className="nav-link-mobile" link="home">
             Home
           </li>
-          <li onClick={handleClick} className="nav-link" link="about">
+          <li onClick={handleClick} className="nav-link-mobile" link="about">
             About
           </li>
-          <li onClick={handleClick} className="nav-link" link="project">
+          <li onClick={handleClick} className="nav-link-mobile" link="project">
             Project
           </li>
-          <li onClick={handleClick} className="nav-link" link="skills">
+          <li onClick={handleClick} className="nav-link-mobile" link="skills">
             Skills
           </li>
-          <li onClick={handleClick} className="nav-link" link="contact">
+          <li onClick={handleClick} className="nav-link-mobile" link="contact">
             Contact
           </li>
         </ul>

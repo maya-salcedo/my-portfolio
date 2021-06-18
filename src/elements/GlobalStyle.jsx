@@ -26,6 +26,8 @@ p, a {
   font-family: 'Playfair Display SC', serif;
 }
 
+
+
 .nav-link:hover {
   color: #151515;
   border-radius: 3px;
@@ -35,14 +37,19 @@ p, a {
 ${'' /* hamburger menu */}
 aside {
   position: fixed;
-  width: 30rem;
-  height: 100%;
+  width: 8rem;
+  height: 22rem;
   background-color: #efefef;
   z-index: 1000;
   transform: translateX(-30rem);
   transition: all 0.5s;
   overflow-x: hidden;
   overflow-y: auto;
+}
+.nav-link-mobile {
+  text-decoration: none;
+  color: #204051;
+  font-family: 'Playfair Display SC', serif;
 }
 .open {
   transform: translateX(0);

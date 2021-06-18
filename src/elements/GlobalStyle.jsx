@@ -37,8 +37,8 @@ p, a {
 ${'' /* hamburger menu */}
 aside {
   position: fixed;
-  width: 8rem;
-  height: 22rem;
+  width: 9rem;
+  height: 23rem;
   background-color: #efefef;
   z-index: 1000;
   transform: translateX(-30rem);

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import HamburgerMenu from './HamburgerMenu';
 
 const HamburgerWrapper = styled.div`
   position: fixed;
@@ -94,34 +95,7 @@ const Navigation = () => {
           <h2>Maya Salcedo</h2>
         </HamburgerWrapper>
       )}
-      <aside className={sidebarIsOpen ? 'open' : ''}>
-        <ul onClick={() => setSidebarIsOpen(false)}>
-          <li>
-            <button
-              onClick={() => setSidebarIsOpen(false)}
-              className="close-sidebar"
-              type="button"
-            >
-              <FontAwesomeIcon icon={faTimes} className="icon" />
-            </button>
-          </li>
-          <li onClick={handleClick} className="nav-link-mobile" link="home">
-            Home
-          </li>
-          <li onClick={handleClick} className="nav-link-mobile" link="about">
-            About
-          </li>
-          <li onClick={handleClick} className="nav-link-mobile" link="project">
-            Project
-          </li>
-          <li onClick={handleClick} className="nav-link-mobile" link="skills">
-            Skills
-          </li>
-          <li onClick={handleClick} className="nav-link-mobile" link="contact">
-            Contact
-          </li>
-        </ul>
-      </aside>
+      {sidebarIsOpen && <HamburgerMenu setSidebarIsOpen={setSidebarIsOpen} />}
     </header>
   );
 };

@@ -36,15 +36,7 @@ p, a {
 }
 ${'' /* hamburger menu */}
 aside {
-  position: fixed;
-  width: 9rem;
-  height: 23rem;
-  background-color: #efefef;
-  z-index: 1000;
-  transform: translateX(-30rem);
-  transition: all 0.5s;
-  overflow-x: hidden;
-  overflow-y: auto;
+  
 }
 .nav-link-mobile {
   text-decoration: none;

@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const MenuWrapper = styled.aside`
   position: fixed;
   width: 9rem;
-  height: 23rem;
+  height: 22rem;
   background-color: #efefef;
   z-index: 1000;
   transition: all 0.5s;
@@ -16,10 +16,6 @@ const MenuWrapper = styled.aside`
   > ul {
     padding: 0;
     list-style: none;
-    > button {
-      border: none;
-      padding: 0.3rem 0.8rem;
-    }
     > li {
       display: flex;
       justify-content: space-between;
@@ -27,8 +23,23 @@ const MenuWrapper = styled.aside`
       text-decoration: none;
       color: #204051;
       font-family: 'Playfair Display SC', serif;
+      cursor: pointer;
+      &:hover {
+        color: #151515;
+        border-radius: 3px;
+        background: #ffffff;
+      }
     }
   }
+`;
+
+const ButtonWrapper = styled.button`
+  color: #204051;
+  border: none;
+  background: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  pointer: cursor;
 `;
 
 const HamburgerMenu = ({ setSidebarIsOpen }) => {
@@ -39,11 +50,10 @@ const HamburgerMenu = ({ setSidebarIsOpen }) => {
   return (
     <MenuWrapper>
       <ul onClick={() => setSidebarIsOpen(false)}>
-        <li>
-          <button type="button">
-            <FontAwesomeIcon icon={faTimes} className="icon" />
-          </button>
-        </li>
+        <ButtonWrapper type="button">
+          <FontAwesomeIcon icon={faTimes} className="close-icon" />
+        </ButtonWrapper>
+
         <li onClick={handleClick} link="home">
           Home
         </li>

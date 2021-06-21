@@ -5,13 +5,12 @@ import styled from 'styled-components';
 
 const MenuWrapper = styled.aside`
   position: fixed;
+  top: 0;
   width: 9rem;
   height: 22rem;
   background-color: #efefef;
   z-index: 1000;
   transition: all 0.5s;
-  overflow-x: hidden;
-  overflow-y: auto;
   transform: translateX(0);
   > ul {
     padding: 0;

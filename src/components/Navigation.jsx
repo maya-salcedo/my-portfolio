@@ -4,17 +4,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import HamburgerMenu from './HamburgerMenu';
 
-const HamburgerWrapper = styled.div`
-  position: fixed;
+const HeaderWrapper = styled.header`
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  z-index: 3;
+`;
+
+const HamburgerWrapper = styled.div`
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   background: #204051;
-  z-index: 3;
+  height: 4rem;
   > button {
     font-size: 2rem;
     padding: 0.2rem 0.5rem;
@@ -41,7 +46,6 @@ const NavigationWrapper = styled.div`
   padding: 2%;
   height: 1.5rem;
   background-color: #204051;
-  z-index: 3;
   > li {
     list-style: none;
     text-align: right;
@@ -66,7 +70,7 @@ const Navigation = () => {
     return () => window.removeEventListener('resize', updateMedia);
   }, []);
   return (
-    <header>
+    <HeaderWrapper>
       {isDesktop && (
         <NavigationWrapper>
           <li onClick={handleClick} className="nav-link" link="home">
@@ -96,7 +100,7 @@ const Navigation = () => {
         </HamburgerWrapper>
       )}
       {sidebarIsOpen && <HamburgerMenu setSidebarIsOpen={setSidebarIsOpen} />}
-    </header>
+    </HeaderWrapper>
   );
 };
 

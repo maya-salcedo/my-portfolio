@@ -5,28 +5,28 @@ import Header from '../elements/Header';
 
 const ContainerWrapper = styled.div`
   margin: 0;
-  padding: 1% 5% 5%;
+  padding: 5%;
 `;
 
 const ContentWrapper = styled.div`
   margin: 0;
   padding: 1% 5% 2%;
   height: 100vh;
-  @media(max-width: 1066px){
+  @media (max-width: 1066px) {
     height: 100%;
     padding: 5% 5%;
   }
 `;
 
 const Skills = () => {
-  return(
+  return (
     <ContainerWrapper id="skills">
       <Header>My Skills</Header>
       <ContentWrapper>
-      <SkillLogos />
+        <SkillLogos />
       </ContentWrapper>
     </ContainerWrapper>
   );
-}
+};
 
 export default Skills;

@@ -19,7 +19,6 @@ const HamburgerWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   background: #204051;
-  height: 4rem;
   > button {
     font-size: 2rem;
     padding: 0.2rem 0.5rem;
@@ -31,7 +30,7 @@ const HamburgerWrapper = styled.div`
   }
   > h2 {
     color: #ffffff;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
     font-family: 'Merriweather', serif;
     font-weight: 200;
   }

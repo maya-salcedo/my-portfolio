@@ -7,7 +7,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const ContainerWrapper = styled.div`
   margin: 0;
-  padding: 1% 5% 5%;
+  padding: 5%;
   height: 100vh;
   background-color: #e4e3e3;
 `;

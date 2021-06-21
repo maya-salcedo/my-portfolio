@@ -22,20 +22,24 @@ p, a {
 
 .nav-link {
   text-decoration: none;
-  color: #424642;
+  color: #ffffff;
   font-family: 'Playfair Display SC', serif;
 }
 
+
+
 .nav-link:hover {
   color: #151515;
-  border-radius: 1px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow:  5px 5px 3px #5a5a5a,
-             -5px -5px 3px #ffffff;
+  border-radius: 3px;
+  background: #ffffff;
 }
+
+.close-icon:hover {
+  transform: rotate( 180deg );            
+  transition: transform 1s ease;
+  color: #14274E;
+}
+
 `;
 
 export default GlobalStyle;
-
-
-

@@ -32,7 +32,8 @@ const HamburgerWrapper = styled.div`
     color: #ffffff;
     padding-right: 1rem;
     font-family: 'Merriweather', serif;
-    font-weight: 200;
+    font-weight: 500;
+    font-size: 1.6rem;
   }
 `;
 

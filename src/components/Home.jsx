@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from 'react';
+import styled, { css } from 'styled-components';
 import CarouselWrapper from './HomeCarousel';
 
 const HomeWrapper = styled.div`
@@ -21,6 +21,11 @@ const Header = styled.h1`
   padding-top: 40vh;
   margin: 0 auto;
   text-shadow: 0 0 10px #865858, 2px 2px 3px rgba(236, 223, 200, 0.05);
+  ${(props) =>
+    props.mobile &&
+    css`
+      padding-top: 20vh;
+    `}
 `;
 
 const Ruler = styled.hr`
@@ -28,12 +33,26 @@ const Ruler = styled.hr`
   margin: 0 auto 0 auto;
 `;
 
-const Home = () => (
-  <HomeWrapper id="home">
-    {/* <Header>I'm Maya Salcedo</Header> */}
-    <Ruler />
-    <CarouselWrapper />
-  </HomeWrapper>
-);
+const Home = () => {
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 850);
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 850);
+  };
+  useEffect(() => {
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
+  }, []);
+  return (
+    <HomeWrapper id="home">
+      {isDesktop ? (
+        <Header>I'm Maya Salcedo</Header>
+      ) : (
+        <Header mobile>I am</Header>
+      )}
+      {isDesktop && <Ruler />}
+      <CarouselWrapper />
+    </HomeWrapper>
+  );
+};
 
 export default Home;

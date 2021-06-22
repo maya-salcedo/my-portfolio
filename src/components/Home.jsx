@@ -20,22 +20,20 @@ const Header = styled.h1`
   text-align: center;
   padding-top: 40vh;
   margin: 0 auto;
-  text-shadow: 0 0 10px #865858, 2px 2px 3px rgba(236,223,200,0.05);
+  text-shadow: 0 0 10px #865858, 2px 2px 3px rgba(236, 223, 200, 0.05);
 `;
 
 const Ruler = styled.hr`
   width: 30%;
   margin: 0 auto 0 auto;
-
 `;
 
 const Home = () => (
-    <HomeWrapper id="home">
-      <Header>I'm Maya Salcedo</Header>
-      <Ruler />
-      <CarouselWrapper />
-    </HomeWrapper>
+  <HomeWrapper id="home">
+    {/* <Header>I'm Maya Salcedo</Header> */}
+    <Ruler />
+    <CarouselWrapper />
+  </HomeWrapper>
 );
-
 
 export default Home;

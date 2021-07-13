@@ -40,11 +40,6 @@ p, a {
   color: #14274E;
 }
 
-.close-icon:active {
-  transform: rotate( 180deg );            
-  transition: transform 1s ease;
-  color: #14274E;
-}
 `;
 
 export default GlobalStyle;

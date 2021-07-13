@@ -38,7 +38,7 @@ const ButtonWrapper = styled.button`
   background: none;
   padding: 0.5rem 2rem;
   font-size: 1.4rem;
-  pointer: cursor;
+  cursor: pointer;
 `;
 
 const HamburgerMenu = ({ setSidebarIsOpen }) => {

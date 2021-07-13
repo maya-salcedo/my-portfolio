@@ -26,8 +26,6 @@ p, a {
   font-family: 'Playfair Display SC', serif;
 }
 
-
-
 .nav-link:hover {
   color: #151515;
   border-radius: 3px;

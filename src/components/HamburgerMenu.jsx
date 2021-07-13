@@ -49,8 +49,8 @@ const HamburgerMenu = ({ setSidebarIsOpen }) => {
   return (
     <MenuWrapper>
       <ul onClick={() => setSidebarIsOpen(false)}>
-        <ButtonWrapper type="button">
-          <FontAwesomeIcon icon={faTimes} className="close-icon" />
+        <ButtonWrapper type="button" className="close-icon">
+          <FontAwesomeIcon icon={faTimes} />
         </ButtonWrapper>
 
         <li onClick={handleClick} link="home">

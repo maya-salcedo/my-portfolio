@@ -42,12 +42,6 @@ const ButtonWrapper = styled.button`
 `;
 
 const HamburgerMenu = ({ setSidebarIsOpen }) => {
-  const [mobileAnimation, setMobileAnimation] = useState({
-    transform: "rotate(180deg)",            
-    transition: "transform 1s ease",
-    color: "#14274E"
-  });
-
   const handleClick = (e) => {
     const linkTo = e.target.getAttribute('link');
     document.getElementById(linkTo).scrollIntoView({ behavior: 'smooth' });
@@ -56,7 +50,7 @@ const HamburgerMenu = ({ setSidebarIsOpen }) => {
     <MenuWrapper>
       <ul onClick={() => setSidebarIsOpen(false)}>
         <ButtonWrapper type="button">
-          <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={() => setMobileAnimation} style={mobileAnimation}/>
+          <FontAwesomeIcon icon={faTimes} className="close-icon" />
         </ButtonWrapper>
 
         <li onClick={handleClick} link="home">

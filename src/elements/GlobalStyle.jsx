@@ -26,15 +26,13 @@ p, a {
   font-family: 'Playfair Display SC', serif;
 }
 
-
-
 .nav-link:hover {
   color: #151515;
   border-radius: 3px;
   background: #ffffff;
 }
 
-.close-icon:hover {
+.close-icon:hover, .close-icon:active {
   transform: rotate( 180deg );            
   transition: transform 1s ease;
   color: #14274E;

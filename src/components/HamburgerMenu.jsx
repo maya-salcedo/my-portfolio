@@ -6,14 +6,14 @@ import styled from 'styled-components';
 const MenuWrapper = styled.aside`
   position: fixed;
   top: 0;
-  width: 9rem;
+  width: 10rem;
   height: 22rem;
   background-color: #efefef;
   z-index: 1000;
   transition: all 0.5s;
   transform: translateX(0);
   > ul {
-    padding: 0;
+    padding: 0 0.5rem;
     list-style: none;
     > li {
       display: flex;
@@ -38,7 +38,7 @@ const ButtonWrapper = styled.button`
   background: none;
   padding: 0.5rem 2rem;
   font-size: 1.4rem;
-  pointer: cursor;
+  cursor: pointer;
 `;
 
 const HamburgerMenu = ({ setSidebarIsOpen }) => {
@@ -49,8 +49,8 @@ const HamburgerMenu = ({ setSidebarIsOpen }) => {
   return (
     <MenuWrapper>
       <ul onClick={() => setSidebarIsOpen(false)}>
-        <ButtonWrapper type="button">
-          <FontAwesomeIcon icon={faTimes} className="close-icon" />
+        <ButtonWrapper type="button" className="close-icon">
+          <FontAwesomeIcon icon={faTimes} />
         </ButtonWrapper>
 
         <li onClick={handleClick} link="home">

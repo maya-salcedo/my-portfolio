@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
@@ -6,14 +6,14 @@ import styled from 'styled-components';
 const MenuWrapper = styled.aside`
   position: fixed;
   top: 0;
-  width: 9rem;
+  width: 10rem;
   height: 22rem;
   background-color: #efefef;
   z-index: 1000;
   transition: all 0.5s;
   transform: translateX(0);
   > ul {
-    padding: 0;
+    padding: 0 0.5rem;
     list-style: none;
     > li {
       display: flex;

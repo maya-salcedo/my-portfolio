@@ -23,7 +23,7 @@ const listOfProjects = [
     nameOfProject: 'To-Do App',
     projectUrl: 'https://itsmytodolist.herokuapp.com/',
     imageOfproject: 'image/projects/todolist-img.PNG',
-    description1: 'This is a simple to-do app with database.',
+    description1: 'This is a simple full-stack to-do app with database.',
     description2:
       'React, Node, Express and PostgreSQL are among the technologies used in this project.',
     gitHubURL: 'https://github.com/maya-salcedo/ToDo-App',
@@ -32,7 +32,8 @@ const listOfProjects = [
     nameOfProject: 'Note App',
     projectUrl: 'https://mysimplenoteapp.herokuapp.com/',
     imageOfproject: 'image/projects/note-img.PNG',
-    description1: 'This is a simple note taking application with database.',
+    description1:
+      'This is a simple full-stack note taking application with database.',
     description2:
       'React, Node, Express and PostgreSQL are among the technologies used in this project.',
     gitHubURL: 'https://github.com/maya-salcedo/Note-App',

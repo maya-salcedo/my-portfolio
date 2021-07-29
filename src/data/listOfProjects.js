@@ -14,7 +14,7 @@ const listOfProjects = [
     projectUrl: '',
     imageOfproject: 'image/projects/shop-img.PNG',
     description1:
-      'A full-stack e-commerce app that is similar to amazon where you can register and log-in as a user to buy and/or sell products on the app. Products can be searched, sorted, filtered, rated and reviewed. There is also a chatbox that can be used by the buyer to communicate with the seller. Sellers are ranked and the top sellers get featured.',
+      'A full-stack e-commerce app that is similar to Amazon web app where you can register and log-in as a user to buy and/or sell products on the app. Products can be searched, sorted, filtered, rated and reviewed. There is also a chatbox that can be used by the buyer to communicate with the seller. Sellers are ranked and the top sellers get featured.',
     description2:
       'React, Node, Express, MongoDB, Redux and SocketIO are among the technologies used in this project.',
     gitHubURL: 'https://github.com/maya-salcedo/escooter-shop',

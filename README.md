@@ -1,5 +1,6 @@
 ## View my portfolio at https://mayasalcedo-portfolio.herokuapp.com/
 
+
 ![Portfolio](https://user-images.githubusercontent.com/68334235/131668468-80a69ee9-0e73-4025-9a11-855635138166.gif)
 
 ## This React app is also screen-size responsive.

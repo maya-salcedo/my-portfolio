@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import listOfProjects from '../../data/listOfProjects.js';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
- /* eslint-disable */ 
+/* eslint-disable */
 
 const ContentWrapper = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const ImagewithATagWrapper = styled.div`
   border: auto;
   padding: 2% 2%;
   margin: 1rem;
-  @media(max-width: 700px){
+  @media (max-width: 700px) {
     width: 15rem;
     padding: 5% 5%;
   }
@@ -28,7 +28,7 @@ const Content = styled.div`
   padding: 3% 2%;
   width: 30rem;
   height: auto;
-  @media(max-width: 724px){
+  @media (max-width: 724px) {
     padding: 5% 7%;
   }
 `;
@@ -38,7 +38,7 @@ const ImageWrapper = styled.img`
   height: 100%;
   border: auto;
   text-align: center;
-  @media(max-width: 700px){
+  @media (max-width: 700px) {
     width: 15rem;
   }
 `;
@@ -60,26 +60,41 @@ const LinkWrapper = styled.p`
 `;
 
 const ProjectCarousel = () => (
-  <Carousel useKeyboardArrows showThumbs={false} interval={20000} transitionTime={1000} showArrows={false}>
+  <Carousel
+    useKeyboardArrows
+    showThumbs={false}
+    interval={20000}
+    transitionTime={1000}
+    showArrows={false}
+  >
     {listOfProjects.map((project) => {
-      return(
-      <ContentWrapper key={project.nameOfProject}>
-        <ImagewithATagWrapper>
-          <a href={project?.projectUrl} target="_blank"><ImageWrapper src={project?.imageOfproject} alt={project?.nameOfProject} /></a>
-        </ImagewithATagWrapper>
-        <Content>
-          <ProjectTitle>{project?.nameOfProject}</ProjectTitle>
-          <a href={project?.projectUrl} target="_blank"><LinkWrapper>{project?.projectUrl}</LinkWrapper></a>
-          <TextWrapper>
-          {project?.description1}
-          </TextWrapper>
-          <TextWrapper>
-          {project?.description2}
-          </TextWrapper>
-          <TextWrapper>Check out the code in Github. Click <a href={project?.gitHubURL}  target="_blank">here</a>.</TextWrapper>
-        </Content>  
-      </ContentWrapper>
-    )
+      return (
+        <ContentWrapper key={project.nameOfProject}>
+          <ImagewithATagWrapper>
+            <a href={project?.projectUrl} target="_blank">
+              <ImageWrapper
+                src={project?.imageOfproject}
+                alt={project?.nameOfProject}
+              />
+            </a>
+          </ImagewithATagWrapper>
+          <Content>
+            <ProjectTitle>{project?.nameOfProject}</ProjectTitle>
+            <a href={project?.projectUrl} target="_blank">
+              <LinkWrapper>{project?.projectUrl}</LinkWrapper>
+            </a>
+            <TextWrapper>{project?.description1}</TextWrapper>
+            <TextWrapper>{project?.description2}</TextWrapper>
+            <TextWrapper>
+              Check out the code in Github. Click{' '}
+              <a href={project?.gitHubURL} target="_blank">
+                here
+              </a>
+              .
+            </TextWrapper>
+          </Content>
+        </ContentWrapper>
+      );
     })}
   </Carousel>
 );

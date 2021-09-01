@@ -52,6 +52,15 @@ const NavigationWrapper = styled.div`
     padding: 0 2%;
     font-size: 100%;
     cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Playfair Display SC', serif;
+    &:hover,
+    :active {
+      color: #151515;
+      border-radius: 3px;
+      background: #ffffff;
+    }
   }
 `;
 
@@ -73,19 +82,19 @@ const Navigation = () => {
     <HeaderWrapper>
       {isDesktop && (
         <NavigationWrapper>
-          <li onClick={handleClick} className="nav-link" link="home">
+          <li onClick={handleClick} link="home">
             Home
           </li>
-          <li onClick={handleClick} className="nav-link" link="about">
+          <li onClick={handleClick} link="about">
             About
           </li>
-          <li onClick={handleClick} className="nav-link" link="project">
+          <li onClick={handleClick} link="project">
             Project
           </li>
-          <li onClick={handleClick} className="nav-link" link="skills">
+          <li onClick={handleClick} link="skills">
             Skills
           </li>
-          <li onClick={handleClick} className="nav-link" link="contact">
+          <li onClick={handleClick} link="contact">
             Contact
           </li>
         </NavigationWrapper>

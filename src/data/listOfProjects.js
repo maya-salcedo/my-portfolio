@@ -11,7 +11,7 @@ const listOfProjects = [
   },
   {
     nameOfProject: 'Wedding Invitation',
-    projectUrl: 'https://www.emanueleandmayawedding.com/',
+    projectUrl: 'https://emanuele-maya-wedding.herokuapp.com/',
     imageOfproject: 'image/projects/invitation-img.PNG',
     description1:
       'This is a full-stack online wedding invitation app that has RSVP feature where invited guests confirm their attendance through the website and the data is saved on the database. They will also get a confirmation email after sending their RSVP. The app is screen-size responsive.',
